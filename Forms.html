@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: white;
+        }
+        h3{
+            color: rgb(32, 202, 123);
+        }
+       select{
+            background-color: rgb(2, 14, 19);
+            color: white;
+        }
+        h2{
+            color: red;
+        }
+        body{
+            background-color: rgb(1, 10, 14);
+        }
+    </style>
+</head>
+<body>
+    <text-align="center">
+    <fieldset>
+       <center>
+        <legend><h2>REGISTRATION FORM</h2></legend>
+    <form action="">
+        <h3>PERSONAL DETAILS</h3>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Contact no:</td>
+                <td><input type="number" name="phone"></td>
+            </tr>
+        </table>
+        <h3>EDUCATIONAL QUALIFICATIONS</h3>
+        <label for="degree">Degree:</label>
+        <select id="degree" name="degree">
+            <option value="SELECT">--SELECT---</option>
+            <option value="bsc">B.Sc</option>
+            <option value="ba">B.A</option>
+            <option value="BE">B.Com</option>
+            </select><br><br>
+        <label for="Engineering">Engineering:</label>
+        <select id="Engineering" name="Engineering">
+            <option value="SELECT">--SELECT---</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="AIML">AIML</option>
+        </select><br><br>
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" name="hobbies" value="sports"> Sports 
+        <input type="checkbox" name="hobbies" value="music"> Music
+        <input type="checkbox" name="hobbies" value="reading"> Reading
+        <input type="checkbox" name="hobbies" value="traveling"> Traveling
+        <br><br>
+        <label for="address">Address:</label><br>
+        <textarea name="address" rows="4" cols="50" placeholder="Enter your address here..."></textarea><br><br>
+        <label for="file">Upload your resume:</label>
+        <input type="file" name="file"><br><br>
+        <input type="submit" value="Submit"> 
+    </form>
+    </center>
+    </align>
+    </fieldset>
+</body>
+</html>
